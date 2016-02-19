@@ -1,0 +1,10 @@
+<?php
+session_start();
+if($_SESSION['admin_logged_in']==1)
+{
+	session_destroy();
+    header('Location:tool_login.php');
+}
+else 
+header('Location:tool_login.php');
+?>
